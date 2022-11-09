@@ -1,0 +1,23 @@
+.usersStyleParent {
+    display: flex;
+    .usersStyleChildren {
+        height: 150px;
+        width: 170px;
+        background-color: rgb(178, 184, 184);
+        margin: 10px;
+        h2 {
+          display: flex;
+          justify-content: center;
+          padding-top: 25px;
+        }
+        div {
+          display: flex;
+          justify-content: space-around;
+      
+          button {
+              width: 50px;
+          }
+        }
+      }
+}
+

@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'voting';
+  publicOrPrivate = true;
+  yes = 0;
+  no = 0;
+
+  yesOrNo(result:boolean) {
+    if(result) {
+      this.yes++
+    } else {
+      this.no++
+    }
+  }
 }

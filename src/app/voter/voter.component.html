@@ -1,0 +1,10 @@
+<div class="usersStyleParent">
+    <div class="usersStyleChildren" *ngFor="let user of voterArr">
+        <h2 *ngIf="booleanForMakeResult">{{user}}</h2>
+        <h2 *ngIf="!booleanForMakeResult">Anonym</h2>
+        <div>
+            <button [disabled]="personsWhoVoted.includes(user)" (click)="getResult(user,true)">Yes</button>
+            <button [disabled]="personsWhoVoted.includes(user)" (click)="getResult(user,false)">No</button>
+        </div>
+    </div>
+</div>
